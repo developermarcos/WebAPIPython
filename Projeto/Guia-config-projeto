@@ -1,0 +1,12 @@
+## Projeto utiliza python 3.9 e o framework flask para rodar
+
+python -m venv WebServiceREST
+python -m venv WebServiceClientePython
+
+Scripts\activate
+
+pip install flask
+
+pip install flask-restful
+
+py REST_Servidor.py

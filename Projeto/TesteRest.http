@@ -1,0 +1,63 @@
+### Verbo GET – listar
+GET http://localhost:5000/user/0 HTTP/1.1
+
+### Verbo GET – listar
+GET http://localhost:5000/user/3 HTTP/1.1
+
+### Verbo GET – listar
+curl -X GET http://127.0.0.1:5000/user/1
+
+
+
+### Verbo POST – adicionar
+POST http://127.0.0.1:5000/user/4 HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "luciano",
+    "idade": 10
+}
+
+### Verbo POST – adicionar
+curl -X POST http://127.0.0.1:5000/user/5 
+    -H 'Content-Type: application/json' 
+    -d '{"nome":"dggdgd2","idade":90}' 
+
+
+
+
+### Verbo PUT – atualiza 
+PUT http://127.0.0.1:5000/user/2 HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "coelho",
+    "idade": 22
+}
+
+### Verbo PUT – atualiza
+curl -X PUT http://127.0.0.1:5000/user/5
+    -H 'Content-Type: application/json' 
+    -d '{"nome":"novo nome","idade":25}' 
+
+
+
+
+### Verbo DELETE - excluir
+DELETE http://127.0.0.1:5000/user/3 HTTP/1.1
+
+### Verbo DELETE - excluir
+curl -X DELETE http://127.0.0.1:5000/user/1
+
+
+
+
+
+
+
+
+
+
+###
+curl --request POST --url http://127.0.0.1:5000/user/5?idade=29&nome=abcBolinhas
+
